@@ -189,7 +189,7 @@
         },
         methods: {
             isShowGroupBtn () {
-                if (this.tagGroupList.length > 0 && this.tagGroupList.length < 3) {
+                if (this.tagGroupList.length > 0 && this.tagGroupList.length < 10) {
                     let boolean = true
                     this.tagGroupList.forEach((item, index) => {
                         if (!item.labels.length) {
@@ -505,7 +505,9 @@
             }
         }
         &-content {
-            width: 1002px;
+            width: 1700px;
+            display: flex;
+            flex-wrap: wrap;
             margin: 0 auto;
             padding-top: 16px;
             transform: translateX(10px)
@@ -514,7 +516,6 @@
             transform: translateX(0);
         }
         &-cards {
-            float: left;
             width: 314px;
             margin: 0 20px 15px 0;
             .bk-button {
